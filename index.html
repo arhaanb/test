@@ -1,35 +1,35 @@
 <!DOCTYPE html>
 <html>
-  <body>
-    <title>Helo</title>
-    <p>
-      Click anywhere in the document (the right frame) to get focus. If you
-      click outside the document, it will lose focus.
-    </p>
 
-    <p id="demo"></p>
+<head>
+	<title>Helo</title>
+</head>
 
-    <br /><br /><br />
-    <iframe
-      width="560"
-      height="315"
-      src="https://www.youtube.com/embed/RkC0l4iekYo"
-      frameborder="0"
-      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen
-    ></iframe>
+<body>
+	<h1>HELLO VIDEEP</h1>
+	<p>
+		Click anywhere in the document (the right frame) to get focus. If you
+		click outside the document, it will lose focus.
+	</p>
 
-    <script>
-      setInterval("myFunction()", 1);
+	<p id="demo"></p>
 
-      function myFunction() {
-        var x = document.getElementById("demo");
-        if (document.hasFocus()) {
-          x.innerHTML = "The document has focus.";
-        } else {
-          x.innerHTML = "The document DOES NOT have focus.";
-        }
-      }
-    </script>
-  </body>
+	<br /><br /><br />
+	<iframe width="560" height="315" src="https://www.youtube.com/embed/RkC0l4iekYo" frameborder="0"
+		allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+	<script>
+		setInterval("myFunction()", 1);
+
+		function myFunction() {
+			var x = document.getElementById("demo");
+			if (document.hasFocus()) {
+				x.innerHTML = "The document has focus.";
+			} else {
+				x.innerHTML = "The document DOES NOT have focus.";
+			}
+		}
+	</script>
+</body>
+
 </html>
